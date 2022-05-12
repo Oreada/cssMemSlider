@@ -197,10 +197,19 @@ body {
 
 .media__item{
   border-top: 2rem solid #c2ceaa;
-  border-left: 22rem solid #c2ceaa;
-  border-right: 22rem solid #c2ceaa;
-  border-bottom: 0.5rem solid #444f2c;
+  border-left: 2rem solid #c2ceaa;
+  border-right: 2rem solid #c2ceaa;
+  /* border-bottom: 0.5rem solid #444f2c; */
+
+  margin: 0 auto;
 }
+
+/* @media (max-width: 1370px){
+  .media__item{
+    border-left: 20rem solid #c2ceaa;
+    border-right: 20rem solid #c2ceaa;
+  }
+} */
 
 .media__item > img {
   width: 100%;
@@ -220,7 +229,7 @@ body {
 
   padding: 0 6rem;
 
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .slider__note {
@@ -244,6 +253,7 @@ body {
 }
 
 .note__item {
+  line-height: 100%;
   opacity: 0;
 
   transition: opacity 0.5s ease 0s;
