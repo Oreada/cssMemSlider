@@ -293,6 +293,11 @@ body {
   border: 0.25rem solid #90997e;
 }
 
+.controls__label:active .controls__label-core{
+  background-color: #545454;
+  border: 0.25rem solid #545454;
+}
+
 /* ======================================================================== */
 
 input:nth-child(1):checked~.slider__bottom .controls>label:nth-child(1) .controls__label-core{
