@@ -167,6 +167,7 @@ body {
   justify-content: center;
 
   border: 2rem solid #c2ceaa;
+  border-bottom: none;
 }
 
 .slider__radio{
@@ -237,6 +238,8 @@ body {
 }
 
 .note__list{
+  height: 3rem;
+
   display: grid;
   grid-auto-flow: column;
   /* grid-auto-columns: 100%; */
@@ -412,5 +415,34 @@ input:nth-child(6):checked~.slider__bottom .note>.note__list>#note6{
 }
 
 @media (max-width: 1100px){
+  .slider__bottom {
+    grid-template-columns: auto;
+    row-gap: 0.5rem;
+  }
 
+  .slider__note {
+    order: 1;
+  }
+
+  .controls{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px){
+  .slider {
+    border-top: 2rem solid #c2ceaa;  
+    border-left: none;
+    border-right: none;
+    border-bottom: 2rem solid #c2ceaa;
+  }
+
+  .controls__label-core{
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .note__item {
+    font-size: 1rem;
+  }
 }
