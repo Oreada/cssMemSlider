@@ -122,7 +122,6 @@ body {
   min-height: 100vh;
   /* width: 100vw; */
   overflow-x: hidden;
-  font-size: 2rem;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   color: #545454;
@@ -141,10 +140,14 @@ body {
 } */
 
 ._container {
+  max-width: 70%;
+
+  margin: 0 auto;
+  /* max-width: 80rem; */
   /* max-width: 80%; */
   /* padding: 0 5%; */
-  /* margin: 0 auto;
-  box-sizing: content-box; */
+
+  /* box-sizing: content-box; */
 }
 
 /* ======================================================================== */
@@ -161,6 +164,9 @@ body {
 .slider {
   display: grid;  /* так пропадает верхняя полоса с радиобаттонами */
   /* gap: 3rem; */
+  justify-content: center;
+
+  border: 2rem solid #c2ceaa;
 }
 
 .slider__radio{
@@ -196,20 +202,10 @@ body {
 }
 
 .media__item{
-  border-top: 2rem solid #c2ceaa;
-  border-left: 2rem solid #c2ceaa;
-  border-right: 2rem solid #c2ceaa;
-  /* border-bottom: 0.5rem solid #444f2c; */
+  width: 100%;
 
   margin: 0 auto;
 }
-
-/* @media (max-width: 1370px){
-  .media__item{
-    border-left: 20rem solid #c2ceaa;
-    border-right: 20rem solid #c2ceaa;
-  }
-} */
 
 .media__item > img {
   width: 100%;
@@ -227,9 +223,7 @@ body {
   justify-content: space-between;
   column-gap: 3rem;
 
-  padding: 0 6rem;
-
-  margin-bottom: 1rem;
+  /* padding: 0 6rem; */
 }
 
 .slider__note {
@@ -253,6 +247,7 @@ body {
 }
 
 .note__item {
+  font-size: 2rem;
   line-height: 100%;
   opacity: 0;
 
@@ -409,3 +404,13 @@ input:nth-child(6):checked~.slider__bottom .note>.note__list>#note6{
 }
 
 /* ======================================================================== */
+
+@media (max-width: 1300px){
+  .note__item {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1100px){
+
+}
