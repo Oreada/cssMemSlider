@@ -420,6 +420,17 @@ input:nth-child(6):checked~.slider__bottom .note>.note__list>#note6{
 }
 
 @media (max-width: 1100px){
+  .note__item {
+    font-size: 1rem;
+  }
+
+  .controls__label-core{
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media (max-width: 767px){
   .slider__bottom {
     grid-template-columns: auto;
     row-gap: 0.5rem;
@@ -432,22 +443,16 @@ input:nth-child(6):checked~.slider__bottom .note>.note__list>#note6{
   .controls{
     justify-content: center;
   }
-}
 
-@media (max-width: 700px){
+  .controls__label-core{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   .slider {
     border-top: 2rem solid #c2ceaa;  
     border-left: none;
     border-right: none;
     border-bottom: 2rem solid #c2ceaa;
-  }
-
-  .controls__label-core{
-    width: 1rem;
-    height: 1rem;
-  }
-
-  .note__item {
-    font-size: 1rem;
   }
 }
